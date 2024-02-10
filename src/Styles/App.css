@@ -1,11 +1,11 @@
 body {
   font-family: 'Poppins', sans-serif;
-  overflow-x: hidden;
 }
 
 .container {
   max-width: 1440px;
   margin: 0 auto;
+  overflow-x: hidden;
 }
 
 * {
@@ -90,6 +90,12 @@ p {
 .sweet-alert-btn:hover {
   background-color: #3482FF !important;
   opacity: .8 !important;
+}
+
+@media (max-width: 1375px) {
+  .container {
+    width: initial;
+  }
 }
 
 @media (max-width: 600px) {
