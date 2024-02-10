@@ -121,6 +121,7 @@
     text-align: center;
     position: relative;
     padding: 0px;
+    padding-top: 100px;
     padding-bottom: 200px;
 
   }
@@ -242,10 +243,6 @@
 }
 
 @media (max-width: 600px) {
-  .hero-section {
-    padding-top: 10px;
-  }
-
   .hero-left-section h1 {
     font-size: 45px;
     line-height: 58px;
@@ -283,7 +280,6 @@
 }
 
 @media (max-width: 450px) {
-
   .hero-left-section h1 {
     font-size: 35.2px;
   }
