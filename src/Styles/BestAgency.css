@@ -271,6 +271,10 @@
     cursor: pointer;
   }
 
+  .best-agency-form select option {
+    color: black;
+  }
+
   .best-agency-form {
     width: 90%;
   }
