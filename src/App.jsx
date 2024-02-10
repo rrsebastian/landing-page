@@ -35,7 +35,7 @@ function App() {
     };
   }, []);
   return (
-    <>
+    <div className="container">
       <Header windowWidth={windowWidth} />
       <Hero windowWidth={windowWidth} />
       <Trusted windowWidth={windowWidth} />
@@ -52,7 +52,7 @@ function App() {
       <AllQuestions windowWidth={windowWidth} />
       <SocialStrategy windowWidth={windowWidth} />
       <Footer windowWidth={windowWidth} />
-    </>
+    </div>
   );
 }
 
