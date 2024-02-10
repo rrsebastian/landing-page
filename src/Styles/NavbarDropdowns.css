@@ -218,16 +218,21 @@
     padding: 0px 50px;
     padding-top: 43px;
     height: 1400px;
+    padding-bottom: 56px;
   }
 
   .navbar-dropdown1 {
     height: 1500px;
+
   }
 
   .btn-wrapper1 {
     margin-top: 40px;
     text-align: initial;
+  }
 
+  .btn-wrapper {
+    text-align: initial;
   }
 
   .growth-container {
