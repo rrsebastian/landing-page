@@ -269,9 +269,6 @@
     appearance: none;
     -webkit-appearance: none;
     cursor: pointer;
-  }
-
-  .best-agency-form select option {
     color: black;
   }
 
