@@ -54,6 +54,7 @@
 .trouble-middle-text {
   margin-top: 34.92px;
   margin-bottom: 34.65px;
+  max-width: 570px;
 }
 
 @media(max-width: 1375px) {
@@ -93,6 +94,10 @@
 
   .trouble-growing-content h2 {
     font-size: 18px;
+  }
+
+  .trouble-middle-text {
+    max-width: initial;
   }
 }
 

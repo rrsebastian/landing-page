@@ -21,12 +21,11 @@ function TroubleGrowing({ windowWidth }) {
           <div className="trouble-middle-text">
             <p>
               Along with <u>captivating visuals</u>, our teams perform countless{" "}
-              <u>hours of research and planning</u> to deliver <u>optimized</u>
-              <u>marketing campaigns</u> that target your <u>ideal audience</u>
+              <u>hours of research and planning</u> to deliver <u>optimized</u>{" "}
+              <u>marketing campaigns</u> that target your <u>ideal audience</u>{" "}
               who are most likely to <u>convert into leads</u> .
             </p>
           </div>
-
           <p>
             By thoroughly planning your paid <u>Social Media Advertising</u>{" "}
             campaign, we are able to ensure that every penny of your{" "}
