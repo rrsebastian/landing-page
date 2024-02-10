@@ -1,0 +1,99 @@
+body {
+  font-family: 'Poppins', sans-serif;
+  max-width: 1440px;
+  margin: 0 auto;
+  overflow-x: hidden;
+}
+
+
+* {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+}
+
+*:focus {
+  outline: none;
+}
+
+.btn-wrappers {
+  display: flex;
+  margin-top: 56px;
+  align-items: center;
+}
+
+.btn-wrappers button {
+  padding: 28px 55px;
+  border-radius: 20px;
+  background: #3482FF;
+  color: #FFF;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 16px;
+  border: none;
+  cursor: pointer;
+  transition: opacity 0.25s ease-out;
+}
+
+.btn-wrappers button:hover {
+  opacity: .8;
+}
+
+.btn-wrappers p {
+  color: #3486FA;
+  padding: 0px 79.84px 0px 32px;
+  cursor: pointer;
+}
+
+@keyframes rotateAnimation {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(10deg);
+  }
+}
+
+@keyframes moveLeftToRight {
+
+  0%,
+  100% {
+    transform: translateX(0);
+  }
+
+  50% {
+    transform: translateX(20px);
+  }
+}
+
+p u {
+  color: #191919;
+}
+
+p {
+  font-size: 19.2px;
+  line-height: 32.6px;
+}
+
+.sweet-alert-btn {
+  background-color: #3482FF !important;
+  color: #fff !important;
+  font-family: Poppins, sans-serif !important;
+  border: none !important;
+  transition: all .25s ease-out;
+  margin: 0px;
+}
+
+.sweet-alert-btn:hover {
+  background-color: #3482FF !important;
+  opacity: .8 !important;
+}
+
+@media (max-width: 600px) {
+
+  .btn-wrappers button {
+    width: 355px;
+    align-self: center;
+  }
+}

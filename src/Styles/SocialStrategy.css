@@ -1,0 +1,269 @@
+.social-strategy-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  padding: 118.999px 105px 119.45px 105px;
+}
+
+.strategy-top-container {
+  text-align: center;
+  padding-bottom: 88px;
+}
+
+
+.strategy-top-container h1 {
+  color: #2A2A2A;
+  text-align: center;
+  font-size: 96px;
+  font-weight: 700;
+  line-height: 76.8px;
+  margin-bottom: 17.8px;
+}
+
+.strategy-top-container h2 {
+  color: #FF7012;
+  text-align: center;
+  font-size: 72px;
+  font-weight: 700;
+  line-height: 57.6px;
+  margin-bottom: 28px;
+}
+
+.strategy-top-container p {
+  color: #2A2A2A;
+  font-size: 28.8px;
+  font-weight: 300;
+  line-height: 28.8px;
+  max-width: 1050px;
+}
+
+.strategy-img-container {
+  position: absolute;
+  left: 147.201px;
+  bottom: 225.293px;
+  display: flex;
+  width: 904px;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.strategy-form {
+  display: flex;
+  padding: 27px 273px 27px 32px;
+  align-items: flex-start;
+  border-radius: 24px;
+  border: 1px solid #EFEFEF;
+  background: #FFF;
+  box-shadow: 0px 34px 64px 0px rgba(20, 28, 49, 0.11);
+  width: fit-content;
+  position: relative;
+
+}
+
+.strategy-form input {
+  color: #929EAF;
+  width: 100%;
+  font-family: Poppins;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
+  margin-left: 25px;
+  border: none;
+}
+
+.strategy-form input::placeholder {
+  color: #929EAF;
+}
+
+.strategy-form button {
+  display: flex;
+  padding: 16px 39.395px 16px 39.705px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  right: 16px;
+  top: 15.999px;
+  border-radius: 16px;
+  background: #3482FF;
+  border: none;
+  color: #FFF;
+  text-align: center;
+  font-family: Poppins;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 20px;
+  text-transform: capitalize;
+  cursor: pointer;
+  transition: .25s ease-out;
+}
+
+.strategy-form button:hover {
+  opacity: .8;
+}
+
+
+.strategy-text {
+  max-width: 1025px;
+  padding: 80px 15px 0px 15px;
+  flex-direction: column;
+  text-align: center;
+}
+
+.strategy-text p {
+  color: #BBB;
+  font-size: 14.4px;
+  line-height: 24.48px;
+}
+
+.strategy-background-img {
+  position: absolute;
+  left: -415px;
+  top: 20px;
+  z-index: -5;
+}
+
+@media (max-width: 1375px) {
+
+  .social-strategy-container {
+    padding: 118.999px 0px 119.45px 0px;
+  }
+
+  .strategy-top-container h1 {
+    font-size: 71px;
+    margin-bottom: 0px;
+  }
+
+  .strategy-top-container h2 {
+    font-size: 49.2px;
+  }
+
+  .strategy-top-container p {
+    max-width: 700px;
+    font-size: 23.8px;
+    line-height: 23.8px;
+  }
+
+  .strategy-background-img {
+    position: absolute;
+    top: 85px;
+    left: -294px;
+    height: 163.52px;
+    width: 532.54px;
+  }
+
+  .strategy-top-container {
+    padding-bottom: 70px;
+  }
+
+  .strategy-form {
+    width: 535px;
+  }
+
+  .strategy-text {
+    max-width: 721px;
+  }
+
+  .strategy-text p {
+    font-size: 13px;
+  }
+}
+
+@media (max-width: 600px) {
+  .social-strategy-container {
+    padding-top: 0px;
+  }
+
+  .strategy-top-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .strategy-top-container h1 {
+    font-size: 60px;
+  }
+
+  .strategy-top-container h2 {
+    font-size: 39px;
+    margin-top: 20px;
+    margin-bottom: 0px;
+  }
+
+  .strategy-top-container p {
+    max-width: 400px;
+    font-size: 22.1px;
+  }
+
+  .strategy-form {
+    width: 410px;
+    border-radius: 20px;
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+    padding: 20px 0px;
+  }
+
+  .strategy-form input {
+    margin: 0px;
+    text-align: center;
+  }
+
+  .pointing-img {
+    display: none;
+  }
+
+
+  .strategy-form button {
+    top: 70px;
+    right: 0px;
+    width: 100%;
+    border-radius: 20px;
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+    padding: 20px 0px;
+  }
+
+  .strategy-text {
+    max-width: 360px;
+    padding: 0px;
+    margin-top: 100px;
+  }
+
+  .strategy-text p {
+    font-size: 12px;
+    line-height: 20.5px;
+  }
+}
+
+@media (max-width: 450px) {
+  .strategy-top-container h1 {
+    font-size: 52.7px;
+    line-height: 42.2px;
+  }
+
+  .strategy-form {
+    width: 95%;
+  }
+
+  .strategy-top-container h2 {
+    font-size: 32.1px;
+  }
+
+  .strategy-top-container p {
+    max-width: 360px;
+    font-size: 20.1px;
+    line-height: 20.1px;
+  }
+
+  .strategy-background-img {
+    width: 269px;
+    height: 80px;
+    left: -150px;
+    top: 240px;
+
+  }
+}

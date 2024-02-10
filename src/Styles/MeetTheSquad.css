@@ -1,0 +1,170 @@
+.squad-container {
+  text-align: center;
+  padding: 110px 105px 120px 105px;
+  background: linear-gradient(180deg, #F2FAFF 0%, rgba(248, 252, 255, 0.00) 100%, #F4FAFF 100%);
+}
+
+.squad-top-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+  padding-bottom: 70px;
+}
+
+.squad-top-container h1 {
+  color: #0B0B0B;
+  text-align: center;
+  font-size: 52px;
+  font-weight: 700;
+  line-height: 62.4px;
+}
+
+.squad-top-container p {
+  color: #727272;
+  text-align: center;
+  font-weight: 300;
+  line-height: 32.6px;
+  max-width: 584.38px;
+}
+
+.squad-imgs-container {
+  display: flex;
+  gap: 30px;
+  align-items: center;
+  justify-content: center;
+
+}
+
+.squad-person-wrapper {
+  position: relative;
+}
+
+.squad-imgs-container img {
+  border-radius: 20px;
+}
+
+.squad-person-details {
+  position: absolute;
+  bottom: 0px;
+  z-index: 200;
+  display: flex;
+  min-width: 190px;
+  padding: 24px 30px 20px 30px;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 4.99px;
+  border-radius: 0px 20px 0px 18px;
+  background: #FFF;
+}
+
+.squad-person-details h2 {
+  color: #0B0B0B;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 19.2px;
+}
+
+.squad-person-details h3 {
+  color: #737373;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 25.5px;
+}
+
+.radio-inputs-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 60px;
+}
+
+.radio-inputs-container input[type="radio"] {
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  width: 20px;
+  height: 20px;
+  border: 2px solid gray;
+  border-radius: 50%;
+  margin-right: 10px;
+  cursor: pointer;
+  position: relative;
+}
+
+.radio-inputs-container input[type="radio"]:checked {
+  background-color: transparent;
+  border: 2px solid orange;
+}
+
+.radio-inputs-container input[type="radio"]:checked::before {
+  content: "";
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: orange;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+@media (max-width: 1375px) {
+
+  .squad-container {
+    padding: 110px 0px 120px 0px;
+  }
+
+  .squad-top-container h1 {
+    font-size: 45px;
+    line-height: 54px;
+  }
+
+  .squad-top-container p {
+    color: #666666;
+    font-size: 16px;
+    line-height: 27.2px;
+    max-width: 590px;
+
+  }
+
+  .squad-imgs-container img {
+    max-width: 335px;
+  }
+
+  .squad-imgs-container .squad-person-wrapper:nth-child(3) {
+    display: none;
+  }
+}
+
+@media (max-width: 720px) {
+  .squad-imgs-container .squad-person-wrapper:nth-child(2) {
+    display: none;
+  }
+
+  .squad-imgs-container img {
+    max-width: 100%;
+  }
+
+}
+
+@media(max-width: 600px) {
+  .squad-top-container p {
+    max-width: 360px;
+  }
+
+  .squad-imgs-container img {
+    max-width: 95%;
+  }
+
+  .radio-inputs-container {
+    margin-top: 40px;
+  }
+}
+
+@media(max-width: 450px) {
+  .squad-top-container h1 {
+    font-size: 35px;
+    line-height: 42px;
+  }
+}

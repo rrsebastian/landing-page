@@ -1,0 +1,240 @@
+.navbar-dropdown,
+.navbar-dropdown1 {
+  position: relative;
+  background-color: white;
+  display: block;
+  height: 455px;
+  padding: 0px 105px;
+  padding-top: 43px;
+  padding-bottom: 56px;
+  box-shadow: 0px 14px 44px 0px rgba(0, 0, 0, 0.05);
+  position: absolute;
+  width: 100%;
+  max-width: 1440px;
+  border-top: 1px solid rgb(229, 231, 236);
+  opacity: 0;
+  visibility: hidden;
+  z-index: 998;
+  transform: translateY(-1000px);
+  transition: transform .8s ease, opacity .8s ease, visibility .8s ease;
+}
+
+.navbar-dropdown.show,
+.navbar-dropdown1.show {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0px);
+}
+
+.navbar-dropdown1 {
+  height: 525px;
+  top: 101px;
+}
+
+.navbar-dropdown {
+  top: 101px;
+}
+
+.navbar-dropdown-items {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 60px;
+}
+
+.navbar-dropdown-wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+
+.dropdown-section {
+  max-width: 279px;
+}
+
+.dropdown-section h1 {
+  display: flex;
+  width: 217px;
+  height: 26px;
+  flex-direction: column;
+  justify-content: center;
+  flex-shrink: 0;
+  color: #252541;
+  font-size: 28px;
+  font-weight: 300;
+  margin-bottom: 24px;
+}
+
+.hr {
+  border: 1px solid;
+  border-bottom: none;
+  border-color: #E5E7EC;
+  margin-bottom: 32px;
+}
+
+.section-content {
+  display: inline-flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 10px;
+}
+
+.section-content h2 {
+  color: #727272;
+  font-size: 19.2px;
+  line-height: 32px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-weight: 400;
+  cursor: pointer;
+  transition: all 0.25s ease-out;
+}
+
+
+
+.section-content h2:hover {
+  color: #F89E52;
+}
+
+.section-content p {
+  color: #727272;
+  font-family: Poppins;
+  font-size: 17.6px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 32px;
+  margin-bottom: 24px;
+}
+
+.btn-wrapper,
+.btn-wrapper1 {
+  text-align: center;
+}
+
+.btn-wrapper button,
+.btn-wrapper1 button {
+  padding: 28px 55px;
+  color: #3482FF;
+  font-size: 16px;
+  line-height: 16px;
+  margin-top: 44px;
+  border-radius: 20px;
+  border: 1px solid #3482FF;
+  background-color: white;
+  cursor: pointer;
+  transition: 0.25s ease-out;
+}
+
+.btn-wrapper1 button {
+  margin-top: 0px;
+}
+
+.btn-wrapper button:hover,
+.btn-wrapper1 button:hover {
+  background-color: #3482FF;
+  color: white;
+}
+
+@media (max-width: 1375px) {
+
+  .navbar-dropdown,
+  .navbar-dropdown1 {
+    z-index: 2000;
+    transform: translateY(-3000px);
+    max-height: 400px;
+    overflow-y: auto;
+    top: 325px;
+  }
+
+  .navbar-dropdown {
+    height: 700px;
+  }
+
+  .navbar-dropdown1 {
+    height: 950px;
+    padding: 0px 50px;
+    padding-top: 43px;
+    padding-bottom: 56px;
+  }
+
+  .growth-container {
+    transform: translateY(-88px);
+  }
+
+  .section-content h2 {
+    font-size: 14px;
+  }
+
+  .dropdown-section h1 {
+    font-size: 18px;
+  }
+
+  .dropdown-section p {
+    font-size: 15px;
+  }
+
+  .navbar-dropdown-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    gap: 50px;
+  }
+
+  .navbar-dropdown1 {
+    max-height: 400px;
+    overflow-y: auto;
+  }
+
+  .navbar-dropdown::-webkit-scrollbar,
+  .navbar-dropdown1::-webkit-scrollbar {
+    width: 6px;
+  }
+
+  .navbar-dropdown::-webkit-scrollbar,
+  .navbar-dropdown1::-webkit-scrollbar-thumb {
+    background-color: transparent;
+  }
+}
+
+
+@media (max-width: 700px) {
+  .navbar-dropdown-items {
+    grid-template-columns: 1fr;
+  }
+
+
+  .navbar-dropdown,
+  .navbar-dropdown1 {
+    transform: translateY(-2500px);
+    transition: transform 1s ease, opacity 1s ease, visibility 1s ease;
+    top: 325px;
+  }
+
+  .navbar-dropdown-wrapper {
+    align-items: start;
+  }
+
+  .navbar-dropdown {
+    padding: 0px 50px;
+    padding-top: 43px;
+    height: 1400px;
+  }
+
+  .navbar-dropdown1 {
+    height: 1500px;
+  }
+
+  .btn-wrapper1 {
+    margin-top: 40px;
+    text-align: initial;
+
+  }
+
+  .growth-container {
+    transform: translateY(0px);
+  }
+
+  .section-content p {
+    margin-bottom: 0px;
+  }
+}

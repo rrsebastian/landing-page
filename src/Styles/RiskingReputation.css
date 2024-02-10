@@ -1,0 +1,187 @@
+.risking-rep-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding: 120px 105px;
+  position: relative;
+}
+
+.risking-shape1 {
+  position: absolute;
+  right: 316.8px;
+  top: 71.52px;
+  animation: rotateAnimation 1.5s linear infinite alternate;
+}
+
+.risking-shape2 {
+  position: absolute;
+  right: 220px;
+  bottom: 195px;
+  animation: moveLeftToRight 2s linear infinite;
+}
+
+
+
+.risking-rep-content {
+  height: 560.84px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 0px 15px 0px 75px;
+
+}
+
+.risking-rep-container h2 {
+  color: #F89E52;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 34px;
+}
+
+.risking-rep-content h1 {
+  color: #0B0B0B;
+  font-size: 45px;
+  font-weight: 700;
+  line-height: 54px;
+  margin-top: 19px;
+  margin-bottom: 25px;
+}
+
+.risking-rep-content p {
+  color: #727272;
+  font-weight: 300;
+  line-height: 32.64px;
+  max-width: 420px;
+}
+
+.risking-text {
+  margin-bottom: 15.92px;
+}
+
+.risking-btn-wrapper {
+  margin-top: 36.92px;
+}
+
+.risking-mobile-extra-img {
+  display: none;
+}
+
+@media (max-width: 1375px) {
+  .risking-rep-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 120px 0px;
+  }
+
+  .risking-img-container {
+    position: relative;
+  }
+
+
+  .risking-rep-content h1 {
+    font-size: 40px;
+    line-height: 48px;
+    max-width: 670px;
+  }
+
+  .risking-rep-content h2 {
+    font-size: 18px;
+  }
+
+  .risking-shape1 {
+    right: 52px;
+    top: -70px;
+  }
+
+  .risking-rep-content {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    padding: 0px;
+  }
+
+  .risking-rep-content p {
+    max-width: 670px;
+  }
+
+  .risking-btn-wrapper {
+    position: relative;
+  }
+
+  .risking-shape2 {
+    bottom: -35px;
+    right: -140px;
+  }
+}
+
+@media (max-width: 620px) {
+  .risking-shape2 {
+    display: none;
+  }
+}
+
+@media (max-width: 600px) {
+  .risking-rep-container {
+    padding-top: 0px;
+  }
+
+  .risking-img-container {
+    text-align: center;
+  }
+
+  .risking-phone-img {
+    width: 90%;
+  }
+
+  .risking-shape1 {
+    z-index: -1;
+    top: 13%;
+    right: 12%;
+  }
+
+  .risking-rep-content {
+    height: initial;
+    width: 100%;
+    margin-top: 40px;
+  }
+
+  .risking-rep-content h1 {
+    max-width: 320px;
+  }
+
+  .risking-rep-main-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .risking-rep-content p {
+    max-width: 360px;
+
+  }
+
+  .risking-btn-wrapper button {
+    width: 340px;
+  }
+
+}
+
+@media (max-width: 450px) {
+  .risking-phone-img {
+    width: 100%;
+  }
+
+  .risking-shape1 {
+    top: 40px;
+    right: 40px;
+    width: 67px;
+    height: 70px;
+  }
+
+  .risking-rep-content h1 {
+    font-size: 32px;
+    line-height: 38.4px;
+
+  }
+}

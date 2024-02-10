@@ -1,0 +1,294 @@
+.hero-section {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  padding: 100px 105px 120px 105px;
+  position: relative;
+}
+
+.hero-left-section {
+  display: flex;
+  width: 615px;
+  max-width: 1230px;
+  flex-direction: column;
+  align-items: flex-start;
+  padding-top: 56.71px;
+}
+
+.background-shape {
+  position: absolute;
+  top: 0px;
+  z-index: -100;
+  width: 688px;
+  height: 855px;
+  left: -60px;
+}
+
+.purple-ball {
+  position: absolute;
+  left: 224.72px;
+  top: 108.91px;
+  width: 22px;
+  height: 22px;
+}
+
+.pinkball {
+  position: absolute;
+  left: 28.8px;
+  top: 85.58px;
+}
+
+.lightpink-ball {
+  width: 43px;
+  height: 43px;
+  position: absolute;
+  left: 0px;
+  bottom: 213.94px;
+}
+
+.hero-text-wrapper {
+  display: inline-flex;
+  padding: 12px 23px 11.59px 23px;
+  align-items: flex-start;
+  border-radius: 32px;
+  background: #F79D5A;
+}
+
+.hero-text-wrapper p {
+  color: #FFF1E7;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 21.6px;
+}
+
+.hero-text-wrapper span {
+  color: #FFF;
+}
+
+.hero-left-section h1 {
+  color: #2A2A2A;
+  font-size: 60px;
+  font-weight: 700;
+  line-height: 74px;
+  margin-top: 35.01px;
+  margin-bottom: 32px;
+}
+
+.hero-socialmedia-icons {
+  display: flex;
+  width: 585px;
+  padding-right: 241px;
+  align-items: center;
+  gap: 20px;
+}
+
+
+.hero-img-section {
+  display: flex;
+  gap: 16px;
+  margin-top: 29px;
+}
+
+.hero-img-wrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+
+.img1 {
+  padding-bottom: 16px;
+}
+
+.img-3 {
+  height: 528px;
+}
+
+.mobile-ball {
+  display: none;
+}
+
+.hero-mobile-shape {
+  display: none;
+}
+
+.mobile-arrow-img {
+  display: none;
+}
+
+@media (max-width: 1375px) {
+  .hero-section {
+    grid-template-columns: 1fr;
+    place-items: center;
+    text-align: center;
+    position: relative;
+    padding: 0px;
+    padding-top: 100px;
+    padding-bottom: 200px;
+
+  }
+
+  .hero-left-section {
+    padding-top: 30px;
+    align-items: center;
+    justify-content: center;
+    width: auto;
+  }
+
+  .hero-socialmedia-icons {
+    width: initial;
+    padding: 0px;
+  }
+
+  .background-shape {
+    display: none;
+  }
+
+  .hero-text-wrapper {
+    position: relative;
+  }
+
+  .purple-ball {
+    top: 5px;
+    left: -7px;
+    z-index: -1;
+  }
+
+  .pinkball {
+    top: 15px;
+    left: -120px;
+  }
+
+  .hero-left-section h1 {
+    position: relative;
+    margin-bottom: 0px;
+    font-size: 72px;
+    line-height: 100px;
+    margin-top: 20px;
+  }
+
+  .mobile-ball {
+    display: block;
+    position: absolute;
+    top: 130px;
+    left: 34px;
+    z-index: -1;
+  }
+
+  .lightpink-ball {
+    bottom: 100px;
+  }
+
+
+  .btn-wrappers p {
+    display: none;
+  }
+
+
+
+  .view-our-plans-btn {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  .hero-socialmedia-icons {
+    position: absolute;
+    bottom: 130px;
+  }
+
+  .hero-img-section {
+    margin: 0px;
+    position: relative;
+    transform: translateY(-20px);
+  }
+
+  .hero-mobile-shape {
+    position: absolute;
+    right: -25px;
+    bottom: 100px;
+    z-index: -1;
+  }
+
+  @keyframes mobileAnimation {
+
+    0%,
+    100% {
+      transform: translateX(0) rotateX(180deg);
+    }
+
+    50% {
+      transform: translateX(20px) rotateX(180deg);
+    }
+  }
+
+  .mobile-arrow-img {
+    display: block;
+    position: absolute;
+    bottom: -185px;
+    right: 40px;
+    animation: mobileAnimation 2s linear infinite;
+
+  }
+
+}
+
+@media (max-width: 691px) {
+  .hero-left-section h1 {
+    position: relative;
+    margin-bottom: 0px;
+    font-size: 60px;
+    line-height: 100px;
+    margin-top: 20px;
+  }
+}
+
+@media (max-width: 600px) {
+  .hero-left-section h1 {
+    font-size: 45px;
+    line-height: 58px;
+  }
+
+  .purple-ball,
+  .pinkball,
+  .mobile-ball {
+    display: none;
+  }
+
+  .img1,
+  .img2 {
+    width: 163px;
+    height: 163px;
+  }
+
+  .img-3 {
+    width: 189px;
+    height: 335px;
+  }
+
+  .mobile-arrow-img {
+    display: none;
+  }
+
+  .hero-text-wrapper {
+    padding: 25px 35px;
+  }
+
+
+  .btn-wrappers .view-our-plans-btn {
+    width: 366px;
+  }
+}
+
+@media (max-width: 450px) {
+  .hero-left-section h1 {
+    font-size: 35.2px;
+  }
+
+  .hero-text-wrapper {
+    padding: 20px 20px;
+  }
+
+  .lightpink-ball {
+    left: 0px;
+  }
+}

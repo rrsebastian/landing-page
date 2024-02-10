@@ -1,0 +1,131 @@
+.availability-form {
+  display: flex;
+  width: 500px;
+  padding: 63px 46px 46px 46px;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+  flex-shrink: 0;
+  align-self: stretch;
+  border-radius: 20px;
+  border: 1px solid #F3F3F3;
+  background: #FFF;
+  box-shadow: 0px 15px 30px 0px rgba(61, 90, 125, 0.08);
+  position: absolute;
+  text-align: center;
+  top: 70%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1001;
+}
+
+.availability-form h1 {
+  color: #0B0B0B;
+  font-size: 30px;
+  font-weight: 500;
+  line-height: 30px;
+  margin-bottom: 8px;
+}
+
+.availability-form p {
+  color: #727272;
+  font-weight: 300;
+  line-height: 32.6px;
+}
+
+.select-availability-wrapper {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  gap: 20px;
+  position: relative;
+}
+
+.select-availability-wrapper select {
+  padding: 22.5px 29px;
+  align-self: stretch;
+  border-radius: 13px;
+  border: 1px solid #D5D5D5;
+  background: #FBFDFF;
+  padding-right: 30px;
+  background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="24" height="25" viewBox="0 0 24 25" fill="none"><path d="M6 9.5L12 15.5L18 9.5" stroke="%232D2D48" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>');
+  background-repeat: no-repeat;
+  background-position: calc(100% - 10px) center;
+  appearance: none;
+  -webkit-appearance: none;
+  cursor: pointer;
+}
+
+.select-availability-wrapper select:focus {
+  outline: none;
+}
+
+.select-availability-wrapper select {
+  color: #0B0B0B;
+  font-family: Poppins;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  cursor: pointer;
+}
+
+.select-availability-wrapper option {
+  color: #0B0B0B;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  cursor: pointer;
+}
+
+.select-availability-wrapper button {
+  padding: 28px 0px;
+  border-radius: 20px;
+  background: #3482FF;
+  color: #FFF;
+  font-family: Poppins;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 16px;
+  border: none;
+  cursor: pointer;
+  transition: all 0.25s ease-out;
+}
+
+.select-availability-wrapper button:hover {
+  opacity: .8;
+}
+
+@media (max-width: 1375px) {
+  .availability-form {
+    top: 25%;
+  }
+}
+
+@media (max-width: 600px) {
+  .availability-form {
+    width: 90%;
+    padding: 43px 30px 35px 30px;
+    top: 50%;
+  }
+
+  .availability-form h1 {
+    font-size: 27px;
+  }
+}
+
+@media (max-width: 450px) {
+  .availability-form {
+    width: 95%;
+    padding: 43px 20px 35px 20px;
+  }
+
+  .availability-form h1 {
+    font-size: 24px;
+  }
+
+  .availability-form p {
+    font-size: 17px;
+  }
+}
