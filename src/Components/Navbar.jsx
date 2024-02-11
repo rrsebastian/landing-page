@@ -141,6 +141,7 @@ function Navbar({
               )}
             </li>
             <li
+              style={{ color: showPlans && "#F89E52" }}
               onClick={() => {
                 if (showService) {
                   setShowService(false);
