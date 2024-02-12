@@ -12,11 +12,10 @@
   width: 100%;
   max-width: 1440px;
   border-top: 1px solid rgb(229, 231, 236);
-  opacity: 0;
   visibility: hidden;
   z-index: 998;
-  transform: translateY(-1000px);
-  transition: transform .8s ease, opacity .8s ease, visibility .8s ease;
+  transform: translateY(-1600px);
+  transition: transform .8s ease, visibility .8s ease;
 }
 
 .navbar-dropdown.show,
