@@ -113,7 +113,7 @@ function SocialGossiping() {
         <h3>The most common threats we encounter:</h3>
         <div className="btn-wrappers gossip-btn-wrapper">
           <img className="gossip-shape1" src={shape1} />
-          <button> Protect Your Brand</button>
+          <button>Protect Your Brand</button>
         </div>
       </section>
     </div>

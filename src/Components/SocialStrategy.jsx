@@ -13,7 +13,7 @@ function SocialStrategy({ windowWidth }) {
     setMousePosition({ x: e.clientX, y: e.clientY });
   };
 
-  const handleSubmit = async (e) => {
+  const handleSubmit = (e) => {
     e.preventDefault();
 
     const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
