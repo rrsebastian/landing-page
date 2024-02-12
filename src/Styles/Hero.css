@@ -91,12 +91,11 @@
 .hero-img-wrapper {
   display: flex;
   flex-direction: column;
+  gap: 14px;
+
 }
 
 
-.img1 {
-  padding-bottom: 16px;
-}
 
 .img-3 {
   height: 528px;
@@ -256,8 +255,12 @@
 
   .img1,
   .img2 {
-    width: 163px;
-    height: 163px;
+    width: 164px;
+    height: 164px;
+  }
+
+  .img1 {
+    padding: 0px;
   }
 
   .img-3 {
@@ -271,6 +274,10 @@
 
   .hero-text-wrapper {
     padding: 25px 35px;
+  }
+
+  .hero-img-wrapper {
+    gap: 5px;
   }
 
 
