@@ -45,13 +45,18 @@ function BestAgency({ windowWidth }) {
 
   useEffect(() => {
     if (isValid) {
+      const scrollbarWidth =
+        window.innerWidth - document.documentElement.clientWidth;
       document.body.style.overflow = "hidden";
+      document.body.style.paddingRight = `${scrollbarWidth}px`;
     } else {
       document.body.style.overflow = "visible";
+      document.body.style.paddingRight = "0";
     }
 
     return () => {
       document.body.style.overflow = "visible";
+      document.body.style.paddingRight = "0";
     };
   }, [isValid]);
 
