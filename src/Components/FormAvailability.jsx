@@ -36,6 +36,10 @@ function FormAvailability({
         const optionDate = new Date(currentDate);
         optionDate.setDate(currentDate.getDate() + i);
 
+        if (i === 0) {
+          continue;
+        }
+
         if (optionDate.getDay() === 0 || optionDate.getDay() === 6) {
           continue;
         }

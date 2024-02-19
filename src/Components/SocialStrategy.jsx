@@ -63,6 +63,7 @@ function SocialStrategy({ windowWidth }) {
       >
         <img className="pointing-img" src={img1} />
         <input
+          name="email"
           autoComplete="true"
           style={{ background: emailValid ? "" : "#FF9494" }}
           placeholder={

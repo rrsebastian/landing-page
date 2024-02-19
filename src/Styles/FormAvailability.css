@@ -8,19 +8,19 @@
   flex-shrink: 0;
   align-self: stretch;
   border-radius: 20px;
-  border: 1px solid #F3F3F3;
-  background: #FFF;
+  border: 1px solid #f3f3f3;
+  background: #fff;
   box-shadow: 0px 15px 30px 0px rgba(61, 90, 125, 0.08);
-  position: absolute;
+  position: fixed;
   text-align: center;
-  top: 70%;
+  top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
   z-index: 1001;
 }
 
 .availability-form h1 {
-  color: #0B0B0B;
+  color: #0b0b0b;
   font-size: 30px;
   font-weight: 500;
   line-height: 30px;
@@ -45,8 +45,8 @@
   padding: 22.5px 29px;
   align-self: stretch;
   border-radius: 13px;
-  border: 1px solid #D5D5D5;
-  background: #FBFDFF;
+  border: 1px solid #d5d5d5;
+  background: #fbfdff;
   padding-right: 30px;
   background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="24" height="25" viewBox="0 0 24 25" fill="none"><path d="M6 9.5L12 15.5L18 9.5" stroke="%232D2D48" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>');
   background-repeat: no-repeat;
@@ -61,7 +61,7 @@
 }
 
 .select-availability-wrapper select {
-  color: #0B0B0B;
+  color: #0b0b0b;
   font-family: Poppins;
   font-size: 16px;
   font-style: normal;
@@ -71,7 +71,7 @@
 }
 
 .select-availability-wrapper option {
-  color: #0B0B0B;
+  color: #0b0b0b;
   font-size: 16px;
   font-style: normal;
   font-weight: 400;
@@ -82,8 +82,8 @@
 .select-availability-wrapper button {
   padding: 28px 0px;
   border-radius: 20px;
-  background: #3482FF;
-  color: #FFF;
+  background: #3482ff;
+  color: #fff;
   font-family: Poppins;
   font-size: 16px;
   font-weight: 600;
@@ -94,20 +94,13 @@
 }
 
 .select-availability-wrapper button:hover {
-  opacity: .8;
-}
-
-@media (max-width: 1375px) {
-  .availability-form {
-    top: 25%;
-  }
+  opacity: 0.8;
 }
 
 @media (max-width: 600px) {
   .availability-form {
     width: 90%;
     padding: 43px 30px 35px 30px;
-    top: 50%;
   }
 
   .availability-form h1 {

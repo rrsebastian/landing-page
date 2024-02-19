@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import "../Styles/BestAgency.css";
 import icon1 from "../assets/consultation_icon02.png.png";
 import icon2 from "../assets/consultation_icon03.png.png";
@@ -43,6 +43,18 @@ function BestAgency({ windowWidth }) {
     setIsFormSubmitted(true);
   };
 
+  useEffect(() => {
+    if (isValid) {
+      document.body.style.overflow = "hidden";
+    } else {
+      document.body.style.overflow = "visible";
+    }
+
+    return () => {
+      document.body.style.overflow = "visible";
+    };
+  }, [isValid]);
+
   return (
     <div id="best-agency-container" className="best-agency-container">
       <section className="best-agency-content">
@@ -78,6 +90,7 @@ function BestAgency({ windowWidth }) {
           placeholder="Name"
           type="text"
           name="name"
+          autoComplete="name"
           value={formData.name}
           onChange={handleInputChange}
           style={{
@@ -92,6 +105,7 @@ function BestAgency({ windowWidth }) {
           placeholder="Email Address"
           type="text"
           name="email"
+          autoComplete="email"
           value={formData.email}
           onChange={handleInputChange}
           style={{

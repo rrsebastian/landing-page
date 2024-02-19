@@ -113,8 +113,6 @@ const SocialMediaContainer = ({
   );
 };
 
-// Main Conatainer
-
 function FormAdditionalDetails({
   bestAgencyForm,
   ChangeIsValid,
@@ -497,6 +495,8 @@ function FormAdditionalDetails({
     });
   };
 
+  // Main Conatainer
+
   return (
     <div
       style={{ display: buttonClicked && "none" }}
@@ -506,17 +506,21 @@ function FormAdditionalDetails({
         <h1>Additional Details</h1>
         <p>What’s the best date and time to give you a call?</p>
       </div>
-      <form onSubmit={handleSubmit} className="additional-form" action="">
-        <select className="looking-for-select" defaultValue={1} name="" id="">
+      <form onSubmit={handleSubmit} className="additional-form">
+        <select
+          className="looking-for-select"
+          defaultValue={1}
+          name="looking-for"
+        >
           <option value="1" disabled>
             What Are You Looking For?
           </option>
-          <option value="">Grow Followers</option>
-          <option value="">Increase Leads</option>
-          <option value="">Strengthen Engagement</option>
-          <option value="">Built Brand Awareness</option>
-          <option value="">Learn More About Social Media</option>
-          <option value="">Basic Presence</option>
+          <option>Grow Followers</option>
+          <option>Increase Leads</option>
+          <option>Strengthen Engagement</option>
+          <option>Built Brand Awareness</option>
+          <option>Learn More About Social Media</option>
+          <option>Basic Presence</option>
         </select>
         <p>
           Which platforms are you currently using and which platforms would you
@@ -540,6 +544,7 @@ function FormAdditionalDetails({
           ))}
         </div>
         <textarea
+          name="looking-for-textbox"
           placeholder="What Are You Looking For?"
           className="additional-text-area"
         ></textarea>
